@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoso Task Pane Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+
+    <script src="./taskpane.js"></script>
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <div class="ms-Grid">
+
+        <!-- Buttons and Dropdown -->
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-lg-12">
+                <div class="button-dropdown-container">
+                    <!-- Fetch Mails Button -->
+                    <button id="getMails-button" class="getMails-button">
+                        Fetch Mails
+                    </button>
+
+                    <!-- Category Dropdown -->
+                    <div class="dropdown-container">
+                        <label for="selectEmail" class="dropdown-label">Category:</label>
+                        <select id="selectEmail" class="ms-Dropdown dropdown-select">
+                            <option value="sales">Sales</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container to render emails -->
+        <div class="ms-Grid-row" style="display: flex; justify-content: center;">
+            <div class="ms-Grid-col ms-lg-12">
+                <div id="task-pane-container"
+                    style="overflow-y: auto; overflow-x: hidden; max-height: 400px; width: 98%; margin-left: 10px; margin-right: 10px; background-color: #f0f0f0;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Forward Emails Button and Recipients Dropdown -->
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-lg-12">
+                <div class="button-dropdown-container">
+                    <!-- Forward Emails Button -->
+                    <button id="forwardEmails-button" class="forwardEmails-button">Forward Emails</button>
+
+                    <!-- Recipients Dropdown -->
+                    <select id="recipients-dropdown" class="ms-Dropdown recipients-dropdown">
+                        <option value="omkar.lolage22@vit.edu">Recipient 1</option>
+                        <option value="omkarLolage@hackohire.onmicrosoft.com">Recipient 2</option>
+                        <option value="recipient3@example.com">Recipient 3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
