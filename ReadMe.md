@@ -6,6 +6,11 @@ This task pane add-in for Outlook allows users to fetch and forward emails based
 - Fetch emails from Outlook based on categories (sales, marketing, support).
 - Forward selected emails to designated recipients.
 
+## Prerequisites
+- Ensure you have a M365 Tenant with registered devices via the admin center by hardware hash provisioning. Refer: [Windows Autopilot](https://learn.microsoft.com/en-us/autopilot/add-devices) 
+- M365 products installed (outlook).
+- If you want 
+
 ## Installation
 1. Clone the repository.
 2. Install dependencies using `npm install`.
@@ -23,15 +28,7 @@ This task pane add-in for Outlook allows users to fetch and forward emails based
 ## Screenshots
 ![Screenshot](./screenshots/screenshot1.png)
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contributing
-Contributions are welcome! Please follow our [contribution guidelines](CONTRIBUTING.md).
-
-## Troubleshooting
-- If you encounter CORS issues, ensure your add-in is properly configured with valid access tokens.
-- For other issues, please open a [new GitHub issue](https://github.com/yourusername/yourrepository/issues).
+## 
 
 ## FAQs
 - **Q:** Can I customize the categories?
