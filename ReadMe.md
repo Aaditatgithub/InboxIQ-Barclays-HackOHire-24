@@ -9,7 +9,7 @@ This task pane add-in for Outlook allows users to fetch and forward emails based
 ## Installation
 1. Clone the repository.
 2. Install dependencies using `npm install`.
-3. Add the add-in to Outlook following [Microsoft's documentation](https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/quick-start?tabs=visual-studio-code).
+3. Add the add-in to Outlook following [Microsoft's documentation](https://learn.microsoft.com/en-us/office/dev/add-ins/quickstarts/outlook-quickstart?tabs=yeomangenerator).
 
 ## Configuration
 - Replace `config.accessToken` with a valid access token for Microsoft Graph API.
