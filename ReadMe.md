@@ -13,7 +13,7 @@ This task pane add-in for Outlook allows users to fetch and forward emails based
     - Create an azure account with the email same as that of M365 Tenant.
     - Ensure you have admin/global admin priviliges prior to that.
     - Setup API permission for Microsoft Graph API, in delegated permissions.
-    - Run everything as administratoy on pc
+    - Run everything as administrator on pc
 
 ## Installation
 1. Clone the repository.
